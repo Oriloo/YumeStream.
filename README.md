@@ -1,0 +1,74 @@
+# Yumestream
+
+Bienvenue sur le dépôt GitHub de **Yumestream** ! 🎬  
+Il s'agit d'un projet personnel où je crée de zéro un faux site de streaming pour apprendre et perfectionner mes compétences en développement web.
+
+![Capture d'écran de la page d'accueil de Yumestream](github/CapturePage.png)
+
+## Table des matières
+
+- [Aperçu](#aperçu)
+- [Fonctionnalités](#fonctionnalités)
+- [Technologies utilisées](#technologies-utilisées)
+- [Installation](#installation)
+- [Fonctionnalités à venir](#fonctionnalités-à-venir)
+- [Contribuer](#contribuer)
+- [Licence](#licence)
+
+## Aperçu
+
+**Yumestream** est un projet en cours de développement qui imite les fonctionnalités de base d'une plateforme de streaming. Il est principalement conçu pour simuler une interface utilisateur fluide et moderne, tout en intégrant certaines fonctionnalités basiques de navigation et de gestion de contenu.
+
+## Fonctionnalités
+
+- 🎥 Interface utilisateur de type site de streaming
+- 🔍 Barre de recherche pour les vidéos
+- 📄 Pages de détail pour chaque "vidéo"
+- 📱 Responsive design pour s'adapter aux différents appareils
+- 💡 Interface intuitive et ergonomique
+
+## Technologies utilisées
+
+- **HTML5** : Structure des pages web
+- **CSS3** : Styles et mises en page
+- **JavaScript** : Fonctions dynamiques et interactions utilisateur
+- **Librairies** : jQuery, OwlCarousel...
+  
+## Installation
+
+Pour tester Yumestream localement, suivez ces étapes :
+
+1. Clonez le dépôt :
+
+   ```bash
+   git clone https://github.com/Oriloo/yumestream.git
+   ```
+
+2. Ouvrez le projet dans votre éditeur de texte préféré.
+
+3. Ouvrez `index.html` dans votre navigateur pour visualiser le site.
+
+## Fonctionnalités à venir
+
+Voici quelques idées de fonctionnalités que je prévois d'implémenter à l'avenir :
+
+- 🔄 Fonctionnalité de lecture des vidéos
+- 📂 Système de catégories de contenu
+- ⭐️ Possibilité de noter et de commenter les vidéos
+- 🔗 Connexion utilisateur (authentification)
+- 📊 Tableau de bord administrateur pour gérer le contenu
+
+## Contribuer
+
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez suivre ces étapes :
+
+1. Forkez le projet
+2. Créez une nouvelle branche : `git checkout -b feature/ma-feature`
+3. Faites vos modifications et ajoutez-les : `git add .`
+4. Validez vos modifications : `git commit -m 'Ajout d'une nouvelle fonctionnalité'`
+5. Poussez la branche : `git push origin feature/ma-feature`
+6. Créez une Pull Request
+
+## Licence
+
+Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus d'informations.
