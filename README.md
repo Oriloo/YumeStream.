@@ -47,9 +47,9 @@ Pour tester **YumeStream.** localement, suivez ces étapes :
    git clone https://github.com/Oriloo/yumestream.git
    ```
 
-2. Ouvrez le projet dans votre éditeur de texte préféré.
+2. Le déposer sur un serveur web (Apache + MySQL).
 
-3. Ouvrez `index.html` dans votre navigateur pour visualiser le site.
+3. Ouvrez `index.php` dans votre navigateur pour visualiser le site.
 
 ## Contribuer
 
