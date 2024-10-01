@@ -11,7 +11,6 @@ Il s'agit d'un projet personnel où je crée de zéro un faux site de streaming 
 - [Fonctionnalités](#fonctionnalités)
 - [Technologies utilisées](#technologies-utilisées)
 - [Installation](#installation)
-- [Fonctionnalités à venir](#fonctionnalités-à-venir)
 - [Contribuer](#contribuer)
 - [Licence](#licence)
 
@@ -47,16 +46,6 @@ Pour tester Yumestream localement, suivez ces étapes :
 2. Ouvrez le projet dans votre éditeur de texte préféré.
 
 3. Ouvrez `index.html` dans votre navigateur pour visualiser le site.
-
-## Fonctionnalités à venir
-
-Voici quelques idées de fonctionnalités que je prévois d'implémenter à l'avenir :
-
-- 🔄 Fonctionnalité de lecture des vidéos
-- 📂 Système de catégories de contenu
-- ⭐️ Possibilité de noter et de commenter les vidéos
-- 🔗 Connexion utilisateur (authentification)
-- 📊 Tableau de bord administrateur pour gérer le contenu
 
 ## Contribuer
 
