@@ -5,6 +5,10 @@ Il s'agit d'un projet personnel où je crée de zéro un faux site de streaming 
 
 ![Capture d'écran de la page d'accueil de Yumestream](github/CapturePage.png)
 
+## Rejoignez notre communauté
+
+Vous avez des questions ou souhaitez suivre l'avancement du projet ? Rejoignez notre serveur Discord pour discuter et échanger ! [Cliquez ici pour rejoindre le Discord](https://discord.gg/g9dVyUQz8q)
+
 ## Table des matières
 
 - [Aperçu](#aperçu)
