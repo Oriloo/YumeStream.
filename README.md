@@ -39,7 +39,7 @@ Vous avez des questions ou souhaitez suivre l'avancement du projet ? Rejoignez n
   
 ## Installation
 
-Pour tester yumestream localement, suivez ces étapes :
+Pour tester **YumeStream.** localement, suivez ces étapes :
 
 1. Clonez le dépôt :
 
