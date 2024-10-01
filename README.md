@@ -37,7 +37,7 @@ Vous avez des questions ou souhaitez suivre l'avancement du projet ? Rejoignez n
 - **JavaScript** : Fonctions dynamiques et interactions utilisateur
 - **Librairies** : jQuery, OwlCarousel...
   
-## Installation
+## Installation (non fonctionnelle pour le moment)
 
 Pour tester **YumeStream.** localement, suivez ces étapes :
 
