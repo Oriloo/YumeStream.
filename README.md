@@ -71,4 +71,4 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez s
 
 ## Licence
 
-Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus d'informations.
+Ce projet est sous la licence Creative Commons Attribution - Pas d’Utilisation Commerciale 4.0 International (CC BY-NC 4.0). Consultez le fichier [LICENSE](LICENSE) pour plus d'informations.
