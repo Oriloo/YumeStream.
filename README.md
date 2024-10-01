@@ -1,9 +1,9 @@
-# Yumestream
+# YumeStream.
 
-Bienvenue sur le dépôt GitHub de **Yumestream** ! 🎬  
+Bienvenue sur le dépôt GitHub de **YumeStream.** ! 🎬  
 Il s'agit d'un projet personnel où je crée de zéro un faux site de streaming pour apprendre et perfectionner mes compétences en développement web.
 
-![Capture d'écran de la page d'accueil de Yumestream](github/CapturePage.png)
+![Capture d'écran de la page d'accueil de YumeStream.](github/CapturePage.png)
 
 ## Rejoignez notre communauté
 
@@ -20,7 +20,7 @@ Vous avez des questions ou souhaitez suivre l'avancement du projet ? Rejoignez n
 
 ## Aperçu
 
-**Yumestream** est un projet en cours de développement qui imite les fonctionnalités de base d'une plateforme de streaming. Il est principalement conçu pour simuler une interface utilisateur fluide et moderne, tout en intégrant certaines fonctionnalités basiques de navigation et de gestion de contenu.
+**YumeStream.** est un projet en cours de développement qui imite les fonctionnalités de base d'une plateforme de streaming. Il est principalement conçu pour simuler une interface utilisateur fluide et moderne, tout en intégrant certaines fonctionnalités basiques de navigation et de gestion de contenu.
 
 ## Fonctionnalités
 
@@ -39,7 +39,7 @@ Vous avez des questions ou souhaitez suivre l'avancement du projet ? Rejoignez n
   
 ## Installation
 
-Pour tester Yumestream localement, suivez ces étapes :
+Pour tester yumestream localement, suivez ces étapes :
 
 1. Clonez le dépôt :
 
