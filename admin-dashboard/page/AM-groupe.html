@@ -1,0 +1,50 @@
+<div class="container-form" id="form-1">
+    <div class="zone1">
+        <h2>Ajouter/Modifier un Groupe</h2>
+        <button id="btn-1" onclick="toggleZone('zone2-1')">Afficher/Cacher</button>
+    </div>
+    <div class="zone2" id="zone2-1">
+        <div class="zone2-recherche">
+            <div class="choix choix-1">
+                <div class="a1 choix-select"><a id="a1-1" onclick="toggleAction('ajouter-1', this)">ajouter</a></div>
+                <div class="a2"><a id="a2-1" onclick="toggleAction('modifier-1', this)">modifier</a></div>
+            </div>
+            <div class="bar-recherche" id="bar-recherche-1">
+                <input type="text" name="recherche-1" id="search-1" placeholder="rechercher un groupe *" disabled>
+            </div>
+            <div class="affiche-recherche" id="results-1" style="pointer-events: none;"></div>
+        </div>
+        <div class="zone2-form">
+            <form id="groupeForm-1" action="script/save_groupe.php" method="post">
+                <input type="hidden" name="ajou-modif-select-1" id="ajou-modif-select-1" value="ajouter" required />
+                <input type="hidden" name="id-groupe-select-1" id="id-groupe-select-1" value="" />
+                <div class="champ-form">
+                    <label for="nom-groupe-1">Nom du groupe : *</label>
+                    <br><input type="text" name="nom-groupe-1" id="nom-groupe-1" maxlength="300" required />
+                </div>
+                <div class="champ-form">
+                    <label for="synopsis-groupe-1">Synopsis du groupe :</label>
+                    <br><textarea name="synopsis-groupe-1" id="synopsis-groupe-1" maxlength="2000"></textarea>
+                </div>
+                <div class="champ-form">
+                    <label for="image-groupe-1">Lien de l'image du groupe :</label>
+                    <br><input type="text" name="image-groupe-1" id="image-groupe-1" maxlength="500" />
+                </div>
+                <div class="zone-image-groupe-1" id="zone-image-groupe-1">
+                    <img src="..." id="image-preview-1">
+                </div>
+                <div class="champ-form">
+                    <label for="lien-groupe-1">Lien du logo du groupe :</label>
+                    <br><input type="text" name="lien-groupe-1" id="lien-groupe-1" maxlength="500" />
+                </div>
+                <div class="zone-logo-groupe-1" id="zone-logo-groupe-1">
+                    <img src="..." id="logo-preview-1">
+                </div>
+                <div class="btn-group">
+                    <div class="btn-sub"><button type="button" onclick="resetForm('form-1')">Annuler</button></div>
+                    <div class="btn-sub"><button type="submit" id="submit-1">Valider</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

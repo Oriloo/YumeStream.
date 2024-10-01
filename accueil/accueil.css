@@ -1,0 +1,19 @@
+.page { margin-top: -16vw; }
+
+.container {
+    padding: 4vh 0;
+    h1 {
+        position: relative;
+        margin-left: 4vw;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .container h1 { font-size: 1.8rem; }
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}

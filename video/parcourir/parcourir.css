@@ -1,0 +1,62 @@
+.zone-form-recherche form {
+    margin: 20px;
+
+    .les-3-form-select {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+    }
+
+    .form-GT {
+
+        .form-element {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+
+            .form-checkbox {
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+
+    button {  }
+}
+
+.anime-results {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 50px;
+
+    .anime-item {
+        padding-bottom: 10px;
+
+        .in-anime-item {
+            background-color: #111;
+            width: 200px;
+            padding-bottom: 1px;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                aspect-ratio: 1 / 1.42;
+            }
+
+            a {
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                margin: 0.5vw;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}

@@ -1,0 +1,98 @@
+.InputListeDeroulante-container {
+    position: relative;
+    width: 100%;
+
+    .input-text { width: 100%; }
+
+    .dropdown-button {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .element-list {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0;
+        text-align: left;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+        border-radius: 5px;
+
+        .search-container {
+            position: relative;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+
+            .input-search { width: calc(100% - 50px) !important; }
+
+            .clear-button {
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+        }
+
+        .no-results {
+            padding: 10px;
+            text-align: center;
+            color: #999;
+        }
+
+        .element-list2 {
+            padding: 5px;
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 5px;
+            box-sizing: border-box;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 42px;
+                left: 0;
+                bottom: 0;
+                width: 35px;
+                background: linear-gradient(to right, #fff 5px, rgba(255, 255, 255, 0));
+                pointer-events: none;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 42px;
+                right: 0;
+                bottom: 0;
+                width: 35px;
+                background: linear-gradient(to left, #fff 5px, rgba(255, 255, 255, 0));
+                pointer-events: none;
+            }
+
+            &.hide-before::before { display: none; }
+            &.hide-after::after { display: none; }
+
+            .element-item {
+                padding: 4px 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 0.9em;
+                text-align: center;
+                &:hover { background-color: #f0f0f0; }
+                &.selected { background-color: #d1dde7; }
+            }
+        }
+    }
+}

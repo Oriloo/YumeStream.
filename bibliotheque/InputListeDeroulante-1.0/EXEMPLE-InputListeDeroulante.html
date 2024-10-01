@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélectionner des Éléments</title>
+    <link rel="stylesheet" href="InputListeDeroulante.css">
+</head>
+<body>
+    <form action="" method="post">
+        <div id="container1"></div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="InputListeDeroulante.js"></script>
+    <script>
+        InputListeDeroulante(document.querySelector('#container1'), {
+            liste: ['Action', 'Comédie', 'Drame', 'Fantastique', 'Horreur', 'Romance', 'Science-fiction'],
+            preselect: ['Action', 'Drame', 'Fantastique'], // Pré-sélectionne des éléments de la liste
+            id: 'input1',
+            name: 'elements1',
+            placeholder: 'Sélectionnez des éléments',
+            customClass: 'my-custom-class', // Classe CSS personnalisée
+            required: true, // Le champ input sera requis
+            requiredMax: 5, // Nombre maximum de sélections
+            requiredMin: 1, // Nombre minimum de sélections
+            searchable: true, // Ajouter une barre de recherche
+            noResultsText: 'Aucun résultat trouvé', // Texte à afficher lorsqu'il n'y a aucun résultat
+            customButtonLabel: 'Choisir' // Personnaliser le label du bouton
+        });
+    </script>
+</body>
+</html>

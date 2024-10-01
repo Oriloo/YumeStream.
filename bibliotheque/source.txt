@@ -1,0 +1,14 @@
+Bibliothèques :
+https://jquery.com/ (3.7.1)
+https://owlcarousel2.github.io/OwlCarousel2/ (2.3.4)
+
+Ressources :
+https://fontawesome.com/v4/ (J'ai utilisé du code, les icônes)
+https://www.pinterest.fr/ (J'ai utilisé du code, les images pour les affiches)
+
+Inspirations :
+https://codepen.io/choogoor/pen/YWBxrg?editors=1100 (Je m'en suis inspiré, l'overlay des affiches) 19/05/2024
+https://codepen.io/sanketbodke/pen/qBXBOgb (Je m'en suis inspiré, menu du nav) 01/05/2024
+https://codepen.io/michellebarker/pen/MWJajOb (J'ai utilisé du code, de l'underline 3) 20/05/2024
+
+The Movie Database (TMDB) : pour la grande majorité des images (afficher le logo et dir e qu'il nous on pas aprouver)

@@ -1,0 +1,304 @@
+.carouselRollBig-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+
+    .carousel-track-container {
+        display: flex;
+        width: 100vw;
+    }
+
+    .carousel-track {
+        display: flex;
+    }
+
+    .carousel-card {
+        position: relative;
+        max-height: 126vh;
+
+        .fond-anime-card {
+            width: 100vw;
+            z-index: -1;
+
+            .img-fond {
+                width: 100vw;
+                height: 150vw;
+                object-fit: cover;
+                object-position: 50% 0%;
+            }
+
+            .shadow-effect1 {
+                display: none;
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 75%;
+                height: 100%;
+            }
+            .shadow-effect2 {
+                background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 75%;
+            }
+        }
+
+        .info-anime-card {
+            position: absolute;
+            bottom: 20vw;
+            width: 60vw;
+            padding: 0vw 20vw;
+            text-align: center;
+
+            .img-logo { width: 60vw; }
+            p { display: none; }
+
+            .zone-btn {
+                display: flex;
+                align-items: center;
+                padding: 1vw 0;
+
+                .btn-regarde, .btn-watchliste {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px 20px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #000;
+                    background-color: #fff;
+                    border: 2px solid #fff;
+                    margin-right: 10px;
+                    transition: background-color 0.3s, border 0.3s;
+                    cursor: pointer;
+                    width: 40vw;
+
+                    &:hover {
+                        background-color: #ddd;
+                        border-color: #ddd;
+                    }
+                }
+
+                .btn-watchliste {
+                    background-color: transparent;
+                    color: #fff;
+                    border: 2px solid #fff;
+                    height: 100%;
+                    width: 20px;
+
+                    &:hover {
+                        background-color: #ddd;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .barre-avancement-carousel {
+        position: absolute;
+        left: calc((100vw - 220px) / 2);
+        bottom: 14vw;
+        width: 220px;
+        display: flex;
+        justify-content: space-between;
+
+        .barre-av {
+            background-color: #888;
+            height: 8px;
+            width: 25px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: width 0.2s;
+        }
+        .active {
+            background-color: #fff;
+            width: 55px;
+        }
+    }
+
+    .left-arrow { left: 0; }
+    .right-arrow { right: 0; }
+    .carousel-arrow {
+        display: none;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 3.5vw;
+        cursor: pointer;
+        position: absolute;
+        top: 36%;
+        width: 4vw;
+        transform: translateY(-50%);
+        transition: opacity 0.2s ease-in-out;
+        padding: 0 10px;
+        z-index: 10;
+        -webkit-text-stroke: 0.5px #888;
+        &:hover { opacity: 50%; }
+    }
+
+    /****************************************************/
+    @media screen and (min-width: 480px) {
+        .carousel-card {
+            .fond-anime-card {
+                .img-fond {
+                    height: 90vw;
+                    object-position: right left;
+                }
+            }
+            .info-anime-card {
+                width: 40vw;
+                padding: 0vw 30vw;
+                .img-logo { width: 40vw; }
+            }
+        }
+        .barre-avancement-carousel { bottom: 17vw; }
+        .carousel-arrow { display: block; }
+    }
+    @media screen and (min-width: 800px) {
+        .carousel-card {
+            .fond-anime-card {
+                .img-fond { height: auto; }
+                .shadow-effect1 { display: block; }
+                .shadow-effect2 { height: 40%; }
+            }
+            .info-anime-card {
+                width: 30vw;
+                padding: 12vw 0 0 4vw;
+                text-align: left; 
+                .img-logo { width: 30vw; }
+                .zone-btn .btn-regarde, .btn-watchliste { width: auto; }
+            }
+        }
+        .barre-avancement-carousel {
+            left: 4vw;
+            bottom: 18vw;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .carousel-card .info-anime-card {
+            .img-logo { width: 21vw; }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.5;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}
+
+.carouselRoll-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 1vw 0;
+
+    .carousel-track-container {
+        overflow: scroll;
+        width: 100%;
+        padding: 0 4vw 0 3vw;
+    }
+    .carousel-track {
+        display: flex;
+        transition: transform 0.2s cubic-bezier(0.2, 0.5, 0.5, 0.8);
+    }
+    .carousel-card {
+        min-width: 200px;
+        margin: 0 6px;
+        text-align: left;
+
+        min-width: calc((88vw / 2.5) - 0.4vw);
+    }
+    .carousel-card-top img {
+        width: 100%;
+        aspect-ratio: 1 / 1.42;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .carousel-card-bottom h4 {
+        margin: 0;
+        font-size: 1rem;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    .left-arrow { left: 0; }
+    .right-arrow { right: 0; }
+    .carousel-arrow {
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+        border: none;
+        color: #fff;
+        font-size: 4vw;
+        cursor: pointer;
+        position: absolute;
+        height: 100%;
+        width: 4vw;
+        padding: 0 10px;
+        z-index: 10;
+        -webkit-text-stroke: 0.5px #888;
+        transition: background 0.2s ease-in-out;
+        &:hover { background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); }
+    }
+
+    /****************************************************/
+    @media screen and (min-width: 450px) { /* 2 images */
+        .carousel-card {
+            /* min-width: calc((45vw / 1) - 0.4vw); */
+            /* margin: 0 1.2vw; */
+        }
+        .carousel-arrow {
+            font-size: 4.2vw;
+            width: 4.2vw;
+        }
+    }
+    @media screen and (min-width: 480px) { /* 3 images */
+        .carousel-track-container { overflow: hidden; }
+        .carousel-card { min-width: calc((88vw / 3) - 0.4vw); }
+    }
+    /****************************************************/
+    @media screen and (min-width: 568px) { /* 4 images */
+        .carousel-card {
+            min-width: calc(43vw / 2);
+            margin: 0 1vw;
+        }
+        .carousel-arrow {
+            font-size: 4vw;
+            width: 4vw;
+        }
+    }
+    @media screen and (min-width: 800px) { /* 5 images */
+        .carousel-card { min-width: calc(84vw / 5); }
+    }
+    /****************************************************/
+    @media screen and (min-width: 1720px) { /* 6 images */
+        .carousel-card {
+            min-width: calc((41vw / 3) + 0.4vw);
+            margin: 0 0.8vw;
+        }
+        .carousel-arrow {
+            font-size: 3.8vw;
+            width: 3.8vw;
+        }
+        .carousel-track-container {
+            padding: 0 3.8vw 0 3vw;
+        }
+    }
+    @media screen and (min-width: 2160px) { /* 7 images */
+        .carousel-card { min-width: calc((80vw / 7) + 0.4vw); }
+    }
+}
